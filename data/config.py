@@ -1,14 +1,20 @@
 #-*- coding: utf-8 -*-
 
+from environs import Env 
+
+env = Env()
+env.read_env()
+
+
 BOTS_SETTINGS = [
     {
-        'token': 'OTQ1MjQ4NDAzNjU3NDc4MTY0.YhNZLQ.tnNI87CezKrAKyrmrP6DVfDRvto',
+        'token': env.str("BOT_1"),
         'bot': 'ReactionsClicker',
         'id': 945248403657478164,
         'prefix': '!',
     },
     {
-        'token': 'OTQ1MjQ4NDAzNjU3NDc4MTY0.YhNZLQ.tnNI87CezKrAKyrmrP6DVfDRvto',
+        'token': env.str("BOT_1"),
         'bot': 'ReactionsClicker',
         'id': 945248403657478164,
         'prefix': '!',
